@@ -1,0 +1,7 @@
+name = "JSOBestieTemplate"
+uuid = "68831218-7a4b-5845-b8cc-89c14679f12c"
+authors = ["Tangi Migot <tangi.migot@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.10"
