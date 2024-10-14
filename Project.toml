@@ -3,5 +3,10 @@ uuid = "68831218-7a4b-5845-b8cc-89c14679f12c"
 authors = ["Tangi Migot <tangi.migot@gmail.com>"]
 version = "0.1.0"
 
+[deps]
+BestieTemplate = "e5d671a7-4186-4f1a-bf88-c19b630da94f"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+
 [compat]
 julia = "1.10"
