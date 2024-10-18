@@ -56,11 +56,7 @@ function apply(
   jso_data["AddCirrusCI"] = true
   YAML.write_file(joinpath(dst_path, ".copier-answers.jso.yml"), jso_data)
 
-  BestieTemplate.Copier.copy(
-    "template",
-    "../JSOSuite.jl",
-    answers_file = ".copier-answers.jso.yml",
-  )
+  BestieTemplate.Copier.copy(src_path, dst_path, answers_file = ".copier-answers.jso.yml")
 
   package_name = data["PackageName"]
   quiet || println("""JSOBestieTemplate was applied to $package_name.jl! 🎉 """)
