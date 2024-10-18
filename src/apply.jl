@@ -69,10 +69,5 @@ function apply(
 end
 
 function apply(dst_path; kwargs...)
-  apply(
-    "https://github.com/tmigot/JSOBestieTemplate.jl/template",
-    dst_path,
-    data;
-    kwargs...,
-  )
+  apply("https://github.com/tmigot/JSOBestieTemplate.jl/template", dst_path; kwargs...)
 end
