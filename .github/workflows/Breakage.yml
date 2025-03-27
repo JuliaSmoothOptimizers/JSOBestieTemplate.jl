@@ -160,6 +160,7 @@ jobs:
           done >> summary.md
 
       - name: PR comment with file
+        if: github.event.pull_request.head.repo.fork == false
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
